@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <h3>
+        <span><i class="fa-solid fa-arrow-left"></i></span> &nbsp;Back
+      </h3>
+      <h3>Step <span>1/4</span></h3>
+    </header>
+    <main>
+      <aside class="sectionLeft">
+        <h4>Personal Details</h4>
+      </aside>
+
+      <section class="sectionRight">
+        <!-- form element -->
+        <form class="firstPage" action="">
+          <!-- first article -->
+          <article class="articleCommon">
+            <section class="commonSect firstPageFirst">
+              <h5>Title</h5>
+              <div class="inputHolder commonInputL">
+                <select name="nameTitle" id="nameTitle">
+                  <option class="option" value="sampleSelect">Select...</option>
+                  <option value="mr">Mr.</option>
+                  <option value="mrs">Mrs.</option>
+                  <option value="ms">Ms.</option>
+                  <option value="miss">Miss</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+            </section>
+
+            <section class="firstPageSecond">
+              <div class="divWithin">
+                <h5>
+                  Surname<sup><i class="fa-solid fa-asterisk"></i></sup>
+                </h5>
+                <div class="commonInputSS">
+                  <input type="text" placeholder="Surname..." required />
+                </div>
+              </div>
+
+              <div class="divWithin">
+                <h5>
+                  First Name<sup><i class="fa-solid fa-asterisk"></i></sup>
+                </h5>
+                <div class="commonInputSS">
+                  <input type="text" placeholder="First name..." required />
+                </div>
+              </div>
+            </section>
+
+            <section class="commonSect firstPageThird">
+              <h5>Middle Name</h5>
+              <div class="inputHolder commonInputS">
+                <input type="text" placeholder="Middle name..." />
+              </div>
+            </section>
+
+            <section class="commonSect firstPageFourth">
+              <h5>Home Address</h5>
+              <div class="inputHolder commonInputL">
+                <input type="text" placeholder="Address..." />
+              </div>
+            </section>
+
+            <section class="commonSect firstPageFifth">
+              <h5>Phone Number</h5>
+              <div class="inputHolder commonInputL">
+                <figure>
+                  <img
+                    class="imgblock"
+                    src="assets/icons8-nigeria-flag-48.png"
+                    alt="Logo"
+                    width="48"
+                    height="16"
+                  />
+                </figure>
+                <span
+                  ><i id="flagIcon" class="fa-solid fa-angle-down"></i
+                ></span>
+                <label id="Lleftborder" for="inputTel">+234</label>
+                <input id="inputTel" type="tel" placeholder="8026276487" />
+              </div>
+            </section>
+
+            <section class="commonSect firstPageSixth">
+              <h5>Email Address</h5>
+              <div class="inputHolder commonInputL">
+                <input type="email" placeholder="Email..." />
+              </div>
+            </section>
+
+            <section class="firstPageSeventh">
+              <div class="divWithin">
+                <h5>State of Origin</h5>
+                <div class="commonInputSS">
+                  <select name="stateOfOrigin" id="stateOfOrigin">
+                    <option value="sampleSelect">Select...</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="divWithin">
+                <h5>LGA</h5>
+                <div class="inputHolder commonInputSS">
+                  <select name="nameTitle" id="nameTitle">
+                    <option class="option" value="sampleSelect">
+                      Select...
+                    </option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+              </div>
+            </section>
+
+            <section class="commonSect firstPageEight">
+              <h5>Date of Birth</h5>
+              <div class="dob commonInputL">
+                <input type="date" placeholder="Enter DoB..." />
+              </div>
+            </section>
+
+            <section class="firstPageNine">
+              <div class="divWithin">
+                <h5>Marital Status</h5>
+                <div class="commonInputSS">
+                  <select name="mStatus" id="mStatus">
+                    <option value="sampleSelect">Select...</option>
+                    <option value="single">Single</option>
+                    <option value="engaged">Engaged</option>
+                    <option value="married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="widow">Widow</option>
+                    <option value="widower">Widower</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="divWithin">
+                <h5>Number of Children {Conditional}</h5>
+                <div class="commonInputSS">
+                  <select name="noOfChildren" id="noOfChildren">
+                    <option value="sampleSelect">Select...</option>
+                    <option value="one">One</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three</option>
+                    <option value="four">Four</option>
+                    <option value="five">Five</option>
+                    <option value="bet6and10">Six ~ Ten</option>
+                    <option value="elevenAbove">Eleven and above</option>
+                  </select>
+                </div>
+              </div>
+            </section>
+
+            <section class="firstPageTen">
+              <div class="divWithin">
+                <h5>
+                  Date of Employment<sup
+                    ><i class="fa-solid fa-asterisk"></i
+                  ></sup>
+                </h5>
+                <div class="commonInputSS">
+                  <input type="date" placeholder="Enter date..." required />
+                </div>
+              </div>
+
+              <div class="divWithin">
+                <h5>
+                  Grade Level<sup><i class="fa-solid fa-asterisk"></i></sup>
+                </h5>
+                <div class="commonInputSS">
+                  <input type="text" placeholder="Enter level..." required />
+                </div>
+              </div>
+            </section>
+
+            <section class="commonSect firstPageELeven">
+              <h5>
+                Monthly Net Pay<sup><i class="fa-solid fa-asterisk"></i></sup>
+              </h5>
+              <div class="inputHolder commonInputL">
+                <figure>
+                  <img
+                    class="imgblock"
+                    src="assets/icons8-nigeria-flag-48.png"
+                    alt="Logo"
+                    width="48"
+                    height="16"
+                  />
+                </figure>
+                <label id="Lleftborder" for="netPay">NGN</label>
+                <input id="netPay" type="number" placeholder="0.00" />
+              </div>
+            </section>
+          </article>
+
+          <article class="articleIdDoc">
+            <h4>Identification Document</h4>
+          </article>
+
+          <article class="articleCommon">
+            <section class="commonSect firstPageTwelve">
+              <h5>ID Type</h5>
+              <div class="inputHolder commonInputL">
+                <select name="idType" id="idType">
+                  <option class="option" value="sampleSelect">Select...</option>
+                  <option value="intPass">International Passport</option>
+                  <option value="driverS">Drivers License</option>
+                  <option value="ninCard">NIN Slip/Card</option>
+                  <option value="voterS">Voters Card</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+            </section>
+
+            <section class="commonSect firstPageThirteen">
+              <h5>ID Number</h5>
+              <div class="inputHolder commonInputL">
+                <input type="text" placeholder="Enter ID number" />
+              </div>
+            </section>
+
+            <section class="firstPageFourteen">
+              <div class="divWithin">
+                <h5>Issue Date</h5>
+                <div class="commonInputSS">
+                  <input type="date" placeholder="Enter date..." required />
+                </div>
+              </div>
+              <div class="divWithin">
+                <h5>Expiring Date</h5>
+                <div class="commonInputSS">
+                  <input type="date" placeholder="Enter date..." required />
+                </div>
+              </div>
+            </section>
+
+            <section class="commonSect firstPageFifteen">
+              <h5>Upload a Valid ID</h5>
+              <div
+                class="dragNdrop commonInputL"
+                id="idUploads"
+                onclick="idUpload()"
+              >
+                <p>click here or drag file to upload ID</p>
+              </div>
+            </section>
+          </article>
+
+          <article class="articlePhoneNo">
+            <h4>Phone Number</h4>
+          </article>
+
+          <!-- Next of Kin most esp -->
+
+          <article class="articleCommon">
+            <section class="firstPageSixteen">
+              <div class="divWithin">
+                <h5>
+                  Surname<sup><i class="fa-solid fa-asterisk"></i></sup>
+                </h5>
+                <div class="commonInputSS">
+                  <input type="text" placeholder="Surname..." required />
+                </div>
+              </div>
+
+              <div class="divWithin">
+                <h5>
+                  First Name<sup><i class="fa-solid fa-asterisk"></i></sup>
+                </h5>
+                <div class="commonInputSS">
+                  <input type="text" placeholder="First name..." required />
+                </div>
+              </div>
+            </section>
+
+            <section class="commonSect firstPageSeventeen">
+              <h5>Middle Name</h5>
+              <div class="inputHolder commonInputS">
+                <input type="text" placeholder="Middle name..." />
+              </div>
+            </section>
+
+            <section class="commonSect firstPageEighteen">
+              <h5>Relationship to Next of Kin</h5>
+              <div class="inputHolder commonInputL">
+                <input type="text" placeholder="State relationship" />
+              </div>
+            </section>
+
+            <section class="commonSect firstPageNineteen">
+              <h5>Phone Number</h5>
+              <div class="inputHolder commonInputL">
+                <figure>
+                  <img
+                    class="imgblock"
+                    src="assets/icons8-nigeria-flag-48.png"
+                    alt="Logo"
+                    width="48"
+                    height="16"
+                  />
+                </figure>
+                <span
+                  ><i id="flagIcon" class="fa-solid fa-angle-down"></i
+                ></span>
+                <label id="Lleftborder" for="inputTel">+234</label>
+                <input id="inputTel" type="tel" placeholder="8026276487" />
+              </div>
+            </section>
+
+            <section class="commonSect firstPageTwenty">
+              <h5>BVN Number</h5>
+              <div class="inputHolder commonInputL">
+                <input type="number" placeholder="Enter bvn..." />
+              </div>
+            </section>
+
+            <section class="commonSect firstPageTwent1">
+              <h5>IPPIS Number</h5>
+              <div
+                title="Integrated Personnel and Payroll Information System Number"
+                class="inputHolder commonInputL"
+              >
+                <input type="number" placeholder="Enter IPPS number..." />
+              </div>
+            </section>
+          </article>
+
+          <article class="submitbutt">
+            <button type="submit" onclick="nextPage()">Continue</button>
+          </article>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- <i class="fa-solid fa-arrow-right"></i> -->
+<!-- <i class="fa-solid fa-arrow-up"></i> -->
+<!-- <i class="fa-solid fa-arrow-down"></i> -->
+<!-- <i class="fa-solid fa-arrow-left"></i> -->
+<!-- <i class="fa-solid fa-arrows-to-circle"></i> 
+    <i class="fa-solid fa-arrow-up-long"></i>
+    <i class="fa-solid fa-arrow-right-long"></i>
+    <i class="fa-solid fa-arrow-left-long"></i>
+    <i class="fa-solid fa-arrow-down-long"></i>
+    <i class="fa-regular fa-calendar"></i> 
+    <i class="fa-regular fa-user"></i>
+    <i class="fa-solid fa-angle-down"></i>
+    <i class="fa-solid fa-angle-right"></i>
+    <i class="fa-solid fa-asterisk"></i>
+    windows + alt + r or windows + shift  + r   for screen recording
+    -->
