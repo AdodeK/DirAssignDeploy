@@ -25,15 +25,43 @@ figure .imgblock {
   display: block;
 }
 
-body {
+.white-space {
+  white-space: nowrap;
+}
+
+.main {
   background-color: #f8fafb;
   display: flex;
   flex-flow: column nowrap;
   gap: 2vh;
-  width: 100%;
-  padding-inline: 10%;
+  width: 82%;
+  padding-inline: 5%;
+  padding-bottom: 20vh;
+  font-family: "Noto Sans", sans-serif;
+  overflow: auto;
+}
+.main2 {
+  background-color: #f8fafb;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2vh;
+  width: 82%;
+  padding-inline: 5%;
   padding-bottom: 20vh;
   font-family: "Poppins", sans-serif;
+  overflow: auto;
+}
+.main3 {
+  background-color: #f8fafb;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2vh;
+  width: 82%;
+  padding-inline: 5%;
+  padding-bottom: 20vh;
+  font-family: "Poppins", sans-serif;
+  overflow: auto;
+  display: none;
 }
 
 header {
@@ -47,15 +75,15 @@ header {
   background-color: transparent;
 }
 
-main {
+.replacemain {
   display: flex;
   flex-flow: row nowrap;
-  gap: 3%;
+  gap: 1%;
   align-items: left;
 }
 
 aside.sectionLeft {
-  width: 25%;
+  width: 23%;
   display: grid;
   align-content: start;
   justify-content: left;
@@ -64,7 +92,7 @@ aside.sectionLeft {
 
 section.sectionRight {
   padding-top: 1vh;
-  width: 60%;
+  width: 67%;
 }
 
 form.firstPage {
@@ -91,6 +119,7 @@ section.firstPageSixteen {
   display: flex;
   flex-flow: row nowrap;
 }
+
 .divWithin {
   display: flex;
   flex-flow: column nowrap;
@@ -117,6 +146,36 @@ select > option {
 
 select > option:hover {
   background-color: rgb(127, 255, 255);
+}
+
+/* former page two */
+/* former page two */
+
+section.radiobutt {
+  width: 80%;
+}
+
+section.radiobutt h5 {
+  margin-bottom: 1vh;
+}
+
+.displayShortOne {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+section.radiobutt div.shortOne {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12%;
+}
+
+div.shortOne p {
+  font-size: 0.9rem;
 }
 
 .articleCommon {
@@ -165,7 +224,7 @@ div.commonInputSS {
 .commonInputS {
   border: 1.5px solid silver;
   background-color: white;
-  width: 45%;
+  width: 47%;
   padding: 15px 12px;
   border-radius: 5px;
 }
@@ -190,5 +249,62 @@ input::-webkit-inner-spin-button {
 }
 
 /* input[type="number"] {
-  -moz-appearance: textfield;
+-moz-appearance: textfield;
 } */
+
+body {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100vh;
+  overflow: auto;
+  overflow: auto;
+  font-family: "Noto Sans", sans-serif;
+}
+
+aside.tryit {
+  position: sticky;
+  top: 0;
+  width: 18%;
+  background-image: url("./assets/mustuse.png");
+  background-attachment: fixed;
+  background-position: left;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+}
+
+aside.tryit article {
+  display: flex;
+  flex-flow: column nowrap;
+  color: rgb(236, 234, 234);
+  height: 100%;
+  background-image: radial-gradient(
+    rgba(44, 80, 143, 0.9),
+    rgba(7, 33, 80, 0.9)
+  );
+  justify-content: flex-end;
+  gap: 2%;
+  width: 100%;
+}
+
+aside.tryit article p {
+  padding-inline: 5%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+aside.tryit article figure {
+  width: 100%;
+}
+aside.tryit article figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: sticky;
+  bottom: 0;
+}
+
+article.pBlue p {
+  color: #8d94da;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+}
